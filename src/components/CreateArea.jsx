@@ -8,7 +8,7 @@ function CreateArea(props) {
     title: "",
     content: ""
   });
-  const [isClicked, setIsClicked] = useState();
+  const [isClicked, setIsClicked] = useState(false);
   function handleChange(event) {
     const { name, value } = event.target;
 
@@ -30,7 +30,7 @@ function CreateArea(props) {
   }
 
   function handleClick() {
-    setIsClicked(!isClicked);
+    setIsClicked(true);
   }
 
   return (
